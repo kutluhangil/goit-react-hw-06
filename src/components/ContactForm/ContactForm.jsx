@@ -2,9 +2,13 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { FaUser, FaPhone } from "react-icons/fa";
 import { nanoid } from "nanoid";
+import { useDispatch } from "react-redux";
+import { addContact } from "../../redux/contactsSlice";
 import styles from "./ContactForm.module.css";
 
-export default function ContactForm({ onAddContact }) {
+export default function ContactForm() {
+  const dispatch = useDispatch();
+
   // 1️⃣ Form doğrulama şeması
   const validationSchema = Yup.object({
     name: Yup.string()
@@ -25,7 +29,7 @@ export default function ContactForm({ onAddContact }) {
       number: values.number,
     };
 
-    onAddContact(newContact);
+    dispatch(addContact(newContact));
     actions.resetForm();
   };
 
