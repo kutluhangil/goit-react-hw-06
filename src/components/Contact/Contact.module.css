@@ -1,0 +1,106 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: #2a2a2a;
+  /* Slightly lighter than background */
+  border-radius: 16px;
+  border: 1px solid #333;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.card:hover {
+  transform: translateX(4px);
+  background-color: #333;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #ff4b4b;
+  /* Reddish orange from image */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #330000;
+  /* Dark icon color */
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.number {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.2;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.deleteBtn {
+  background-color: #3a3a3a;
+  color: #eee;
+  border: 1px solid #444;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.deleteBtn:hover {
+  background-color: #ee5253;
+  color: white;
+  border-color: #ee5253;
+}
+
+.callBtn {
+  background-color: #3a3a3a;
+  color: #bbb;
+  border: 1px solid #444;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.callBtn:hover {
+  background-color: #10ac84;
+  color: white;
+  border-color: #10ac84;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 6px;
+}
