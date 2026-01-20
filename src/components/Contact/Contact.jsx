@@ -18,6 +18,7 @@ export default function Contact({ id, name, number, onDelete }) {
         <button className={styles.deleteBtn} onClick={() => onDelete(id)}>
           Delete
         </button>
+        <button className={styles.callBtn}>
           <FaPhoneAlt size={14} />
         </button>
       </div>
