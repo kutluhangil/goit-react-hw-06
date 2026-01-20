@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
   background-color: transparent;
   padding: 10px 0;
   margin-bottom: 20px;

@@ -1,3 +1,4 @@
+import css from "./ContactList.module.css";
 import { useSelector } from "react-redux";
 import { selectContacts } from "../../redux/contactsSlice";
 import { selectNameFilter } from "../../redux/filtersSlice";
@@ -12,7 +13,7 @@ export default function ContactList() {
   );
 
   return (
-    <ul>
+    <ul className={css.list}>
       {visibleContacts.map((contact) => (
         <Contact key={contact.id} contact={contact} />
       ))}
